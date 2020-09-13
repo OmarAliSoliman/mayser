@@ -1,0 +1,317 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("../fonts/ArbFONTS-HelveticaNeueW23forSKY-Reg.ttf");
+}
+input:focus,
+select:focus,
+textarea:focus,
+option:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+body {
+  direction: rtl;
+  font-family: "HelveticaNeue";
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.slider-item {
+  outline: 0 !important;
+}
+
+.pagination {
+  width: 100%;
+  margin: auto;
+  padding-right: 260px;
+  padding-top: 30px;
+  margin-bottom: 40px;
+}
+.pagination .page-item {
+  text-align: center;
+}
+.pagination .page-item .page-link {
+  background-color: transparent !important;
+  padding: 0 !important;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  color: #000;
+  margin-right: 5px;
+  border: 1px solid #bac6d3;
+}
+.pagination .active .page-link {
+  background-color: #2b388f !important;
+  border: 1px solid #2b388f !important;
+  color: #fff;
+}
+
+.top-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f3f3f3;
+  height: 50px;
+}
+.top-header .top-header-option {
+  text-align: left;
+}
+.top-header .top-header-option .lang {
+  color: #000;
+  text-decoration: none;
+}
+.top-header .top-header-option .lang img {
+  width: 20px;
+  height: 15px;
+}
+.top-header .top-header-option .lang span {
+  font-size: 13px;
+  margin-right: 5px;
+  color: #888;
+}
+.top-header .top-header-option .lang .select-language {
+  border: 0;
+  color: #888;
+}
+.top-header .top-header-option .lang:last-child {
+  margin-right: 10px;
+}
+.top-header .top-header-login {
+  margin-top: 2px;
+}
+.top-header .top-header-login ul li {
+  float: right;
+  border-right: 1px solid #ddd;
+}
+.top-header .top-header-login ul li a {
+  font-size: 14px;
+  color: #000 !important;
+  text-decoration: none;
+}
+.top-header .top-header-login ul li a i {
+  color: #2b388f;
+}
+.top-header .top-header-login ul li:first-child {
+  border-right: 0;
+  padding-left: 10px;
+}
+.top-header .top-header-login ul li:first-child span {
+  margin-right: 5px;
+}
+.top-header .top-header-login ul li:nth-last-child(2) {
+  padding-right: 10px !important;
+}
+.top-header .top-header-login ul li:nth-last-child(2) a {
+  color: #2b388f;
+}
+
+.navbar {
+  background-color: #2b388f;
+}
+.navbar .container {
+  position: relative;
+}
+.navbar .navbar-brand {
+  height: 55px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+}
+.navbar .navbar-nav li:last-child {
+  position: absolute;
+  left: 0;
+}
+.navbar .navbar-nav li:last-child img {
+  width: 31px;
+  height: 25px;
+}
+
+.header .header-slider {
+  position: relative;
+  overflow: hidden;
+}
+.header .header-slider .slider-item {
+  background-position: center;
+  background-size: cover;
+  height: 635px;
+}
+.header .header-slider .slider-item .header-content {
+  color: #fff;
+  width: 35%;
+  margin-left: auto;
+  margin-top: 200px;
+}
+.header .header-slider .slider-item .header-content h5 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.header .header-slider .slider-item .header-content p {
+  margin-top: 30px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.header .header-slider .slider-item .header-content .btn {
+  background-color: #2b388f;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 16px;
+  height: 50px;
+  width: 155px;
+  line-height: 40px;
+}
+.header .header-slider .slick-dots {
+  text-align: center;
+  bottom: 300px;
+  width: 50%;
+  transform: rotate(90deg);
+  right: -300px;
+}
+.header .header-slider .slick-dots li {
+  width: 30px !important;
+}
+.header .header-slider .slick-dots li button {
+  width: 30px !important;
+  height: 7px !important;
+  background-color: #c7c7c7;
+  padding: 0;
+  border-radius: 10px;
+}
+.header .header-slider .slick-dots li button::before {
+  content: none !important;
+}
+.header .header-slider .slick-dots .slick-active button {
+  background-color: #2b388f;
+}
+.header .header-slider .slick-dots .slick-active button::before {
+  content: none !important;
+}
+
+.search-input {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.search-input .input-group {
+  padding: 10px;
+  border: 1px solid #2b388f;
+  border-radius: 35px;
+}
+.search-input .input-group .input-group-text {
+  border: 0;
+  background-color: transparent;
+}
+.search-input .input-group .input-group-text i {
+  color: #2b388f;
+}
+.search-input .input-group .form-control {
+  border: 0;
+  font-size: 20px;
+}
+.search-input .input-group .form-control::placeholder {
+  color: #2b388f;
+  font-size: 17px;
+}
+.search-input .input-group .btn {
+  background-color: #2b388f;
+  color: #fff;
+  border-radius: 23px;
+  margin-right: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.departments {
+  text-align: center;
+  margin-top: 80px;
+}
+.departments .section-header {
+  position: relative;
+  padding-bottom: 10px;
+}
+.departments .section-header h5 {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0;
+}
+.departments .section-header p {
+  font-size: 14px;
+  color: #B1B1B1;
+  margin: 0;
+}
+.departments .departments-cards {
+  margin-top: 60px;
+}
+.departments .departments-cards .card {
+  border: 0;
+  margin-bottom: 20px;
+}
+.departments .departments-cards .card .card-img {
+  padding: 45px;
+  text-align: center;
+  background-color: #F1F7FB;
+  border-radius: 20px;
+  border: 1px solid #DDD;
+}
+.departments .departments-cards .card .card-img img {
+  width: 72px;
+  height: 59px;
+  margin: auto;
+}
+.departments .departments-cards .card .card-title {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2b388f;
+}
+
+.add-your-ads {
+  text-align: center;
+  margin-top: 70px;
+  padding: 70px;
+}
+.add-your-ads .content {
+  color: #fff;
+}
+.add-your-ads .content h5 {
+  font-weight: bold;
+  font-size: 35px;
+}
+.add-your-ads .content p {
+  font-size: 20px;
+  width: 65%;
+  margin: auto;
+}
+.add-your-ads .content .btn {
+  background-color: #59BB66;
+  border-radius: 35px;
+  color: #fff;
+  padding: 0;
+  height: 60px;
+  width: 160px;
+  line-height: 60px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.add-your-ads .content .btn i {
+  margin-left: 5px;
+}
+
+.departments .section-header::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  width: 28px;
+  height: 3px;
+  background-color: #2b388f;
+}
+
+/*# sourceMappingURL=style.css.map */
