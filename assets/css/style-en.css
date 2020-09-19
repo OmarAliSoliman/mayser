@@ -12,7 +12,7 @@ option:focus {
 }
 
 body {
-  direction: rtl;
+  direction: ltr;
   font-family: "HelveticaNeue";
 }
 
@@ -32,7 +32,7 @@ img {
 .pagination {
   width: 100%;
   margin: auto;
-  padding-right: 260px;
+  padding-left: 260px;
   padding-top: 30px;
   margin-bottom: 40px;
 }
@@ -47,7 +47,7 @@ img {
   line-height: 30px;
   border-radius: 50%;
   color: #000;
-  margin-right: 5px;
+  margin-left: 5px;
   border: 1px solid #bac6d3;
 }
 .pagination .active .page-link {
@@ -63,7 +63,7 @@ img {
   height: 50px;
 }
 .top-header .top-header-option {
-  text-align: left;
+  text-align: right;
 }
 .top-header .top-header-option .lang {
   color: #000;
@@ -75,7 +75,7 @@ img {
 }
 .top-header .top-header-option .lang span {
   font-size: 13px;
-  margin-right: 5px;
+  margin-left: 5px;
   color: #888;
 }
 .top-header .top-header-option .lang .select-language {
@@ -83,14 +83,14 @@ img {
   color: #888;
 }
 .top-header .top-header-option .lang:last-child {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .top-header .top-header-login {
   margin-top: 2px;
 }
 .top-header .top-header-login ul li {
-  float: right;
-  border-right: 1px solid #ddd;
+  float: left;
+  border-left: 1px solid #ddd;
 }
 .top-header .top-header-login ul li a {
   font-size: 14px;
@@ -101,14 +101,14 @@ img {
   color: #2a378d;
 }
 .top-header .top-header-login ul li:first-child {
-  border-right: 0;
-  padding-left: 10px;
+  border-left: 0;
+  padding-right: 10px;
 }
 .top-header .top-header-login ul li:first-child span {
-  margin-right: 5px;
+  margin-left: 5px;
 }
 .top-header .top-header-login ul li:nth-last-child(2) {
-  padding-right: 10px !important;
+  padding-left: 10px !important;
 }
 .top-header .top-header-login ul li:nth-last-child(2) a {
   color: #2a378d;
@@ -137,7 +137,7 @@ img {
 .top-header .notification-bell span {
   display: inline-block;
   color: #2a378d;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 .top-header .notification-bell .notification-number {
   display: inline-block;
@@ -179,14 +179,14 @@ img {
 }
 .navbar .navbar-nav .nav-item .navbar-modal-style .modal-header {
   background-color: #2a378d;
-  border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   position: relative;
 }
 .navbar .navbar-nav .nav-item .navbar-modal-style .modal-header .modal-title {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  right: 50%;
+  transform: translate(50%, 0);
 }
 .navbar .navbar-nav .nav-item .navbar-modal-style .modal-header .close i {
   color: #fff;
@@ -220,7 +220,7 @@ img {
 }
 .navbar .navbar-nav li:last-child {
   position: absolute;
-  left: 0;
+  right: 0;
 }
 .navbar .navbar-nav li:last-child .btn-map {
   padding: 0;
@@ -241,14 +241,14 @@ img {
 }
 .navbar .navbar-nav li:last-child .modal .modal-header {
   background-color: #2a378d;
-  border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   position: relative;
 }
 .navbar .navbar-nav li:last-child .modal .modal-header .modal-title {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  right: 50%;
+  transform: translate(50%, 0);
 }
 .navbar .navbar-nav li:last-child .modal .modal-header .close i {
   color: #fff;
@@ -284,16 +284,20 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  right: 0;
+  left: 0;
   top: 0;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.8)
+  );
 }
 .header .header-slider .slider-item .header-content {
   position: relative;
   z-index: 2;
   color: #fff;
   width: 35%;
-  margin-left: auto;
+  margin-right: auto;
   margin-top: 200px;
 }
 .header .header-slider .slider-item .header-content h5 {
@@ -318,8 +322,8 @@ img {
   text-align: center;
   bottom: 300px;
   width: 50%;
-  transform: rotate(90deg);
-  right: -300px;
+  transform: rotate(-90deg);
+  left: -300px;
 }
 .header .header-slider .slick-dots li {
   width: 30px !important;
@@ -369,9 +373,9 @@ img {
   background-color: #2a378d;
   color: #fff;
   border-radius: 23px;
-  margin-right: 5px;
-  padding-right: 30px;
+  margin-left: 5px;
   padding-left: 30px;
+  padding-right: 30px;
 }
 
 .departments {
@@ -459,7 +463,7 @@ img {
   font-size: 18px;
 }
 .add-your-ads .content .btn i {
-  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .login-card {
@@ -471,10 +475,10 @@ img {
   height: 492px;
   background-position: right;
   background-size: cover;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   padding-top: 200px;
-  padding-right: 20px;
+  padding-left: 20px;
 }
 .login-card .login-card-img h5 {
   font-size: 40px;
@@ -517,7 +521,7 @@ img {
   margin-bottom: 30px;
   font-size: 16px;
 }
-.login-card .login-form button[type=submit] {
+.login-card .login-form button[type="submit"] {
   background-color: #2a378d;
   color: #fff;
   border-radius: 25px;
@@ -529,10 +533,10 @@ img {
 }
 .login-card .login-form .make-accoutn i {
   font-size: 12px;
-  margin-left: 5px;
+  margin-right: 5px;
 }
 .login-card .login-form .modal-button {
-  text-align: right;
+  text-align: left;
 }
 .login-card .login-form .modal-button .btn-open-modal {
   background-color: transparent;
@@ -601,26 +605,9 @@ img {
 .rigister-card .condition {
   margin-top: 25px;
   margin-bottom: 29px;
-  text-align: right;
+  text-align: left;
 }
-.rigister-card .condition i,
-.rigister-card .condition span {
-  color: #59bb66;
-}
-.rigister-card .modal-button .btn-open-modal {
-  background-color: #2a378d !important;
-  color: #fff !important;
-  border-radius: 25px;
-  width: 100%;
-  margin-top: 0 !important;
-}
-.rigister-card .modal-button .modal-body {
-  padding: 40px;
-}
-.rigister-card .modal-button .modal-body p {
-  width: 60%;
-  margin: auto;
-}
+
 .rigister-card .login-form {
   /* Hide the browser's default checkbox */
   /* Create a custom checkbox */
@@ -632,7 +619,7 @@ img {
 }
 .rigister-card .login-form .condition {
   position: relative;
-  padding-right: 15px;
+  padding-left: 15px;
 }
 .rigister-card .login-form .container input {
   position: absolute;
@@ -644,7 +631,7 @@ img {
 .rigister-card .login-form .checkmark {
   position: absolute;
   top: 0%;
-  left: 97%;
+  right: 95%;
   height: 20px;
   width: 20px;
   background-color: #eee;
@@ -677,6 +664,25 @@ img {
   transform: rotate(45deg);
 }
 
+.rigister-card .condition i,
+.rigister-card .condition span {
+  color: #59bb66;
+}
+.rigister-card .modal-button .btn-open-modal {
+  background-color: #2a378d !important;
+  color: #fff !important;
+  border-radius: 25px;
+  width: 100%;
+  margin-top: 0 !important;
+}
+.rigister-card .modal-button .modal-body {
+  padding: 40px;
+}
+.rigister-card .modal-button .modal-body p {
+  width: 60%;
+  margin: auto;
+}
+
 .houses-cards {
   margin-top: 90px;
 }
@@ -694,10 +700,10 @@ img {
   margin: 0;
 }
 .houses-cards .houses-card-header::after {
-  right: 0 !important;
+  left: 0 !important;
 }
 .houses-cards .dropdoen-div {
-  text-align: left;
+  text-align: right;
 }
 .houses-cards .dropdoen-div .dropdown .dropdown-toggle {
   background-color: transparent;
@@ -716,6 +722,7 @@ img {
 }
 .houses-cards .houses-card-cards {
   margin-top: 60px;
+  /* border-bottom: 1px solid #d6d6d6; */
   padding-bottom: 80px;
   position: relative;
 }
@@ -726,8 +733,8 @@ img {
   width: 17%;
   position: absolute;
   bottom: -105px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  right: 50%;
+  transform: translate(50%, 0);
 }
 .houses-cards .houses-card-cards .btn-more-of-houses .btn {
   background-color: #59bb66;
@@ -748,14 +755,14 @@ img {
   background-size: cover;
   height: 190px;
   border-radius: 0;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   position: relative;
 }
 .houses-cards .houses-card-cards .card .card-img i {
   position: absolute;
   top: 10px;
-  right: 10px;
+  left: 10px;
   color: #fff;
 }
 .houses-cards .houses-card-cards .card .card-img .active {
@@ -763,13 +770,13 @@ img {
 }
 .houses-cards .houses-card-cards .card .card-img .area {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   transform: translate(0, 0);
   background-color: #2a378d;
   color: #fff;
   padding: 8px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   font-size: 13px;
 }
 .houses-cards .houses-card-cards .card .card-body {
@@ -802,8 +809,8 @@ img {
   display: inline-block;
   border: 1px solid #2a378d;
   border-radius: 30px;
-  padding-right: 10px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 .houses-cards .houses-card-cards .card .card-body .type-time .type {
   background-color: #2a378d;
@@ -862,7 +869,7 @@ img {
 }
 .path a::after {
   content: "";
-  margin-right: 6px;
+  margin-left: 6px;
   font-size: 13px;
 }
 .path a:last-child::after {
@@ -916,8 +923,8 @@ img {
   display: inline-block;
   border: 1px solid #2a378d;
   border-radius: 30px;
-  padding-right: 10px;
   padding-left: 10px;
+  padding-right: 10px;
   padding: 5px;
 }
 .add-details .add-content .type-time .type {
@@ -952,7 +959,7 @@ img {
 .add-details .add-content .card-agent .agent-option {
   position: absolute;
   bottom: 40px;
-  left: 20px;
+  right: 20px;
   z-index: 2;
 }
 .add-details .add-content .card-agent .agent-option a {
@@ -960,7 +967,7 @@ img {
   background-color: #2a378d;
   width: 40px;
   height: 40px;
-  margin-left: 5px;
+  margin-right: 5px;
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -977,7 +984,7 @@ img {
 .add-details .add-content .card-agent .card-img {
   position: relative;
   margin-top: 23px;
-  padding-right: 70px;
+  padding-left: 70px;
 }
 .add-details .add-content .card-agent .card-img h6 {
   font-weight: bold;
@@ -992,14 +999,14 @@ img {
   height: 60px;
   border-radius: 50%;
   position: absolute;
-  right: 0px;
+  left: 0px;
 }
 .add-details .add-content .add-option {
   margin-top: 30px;
 }
 .add-details .add-content .add-option .row .col-lg-4 {
-  padding-right: 5px;
   padding-left: 5px;
+  padding-right: 5px;
 }
 .add-details .add-content .add-option .btn-calc,
 .add-details .add-content .add-option .btn-add-fav,
@@ -1013,7 +1020,7 @@ img {
 .add-details .add-content .add-option .btn-calc i,
 .add-details .add-content .add-option .btn-add-fav i,
 .add-details .add-content .add-option .btn-share i {
-  margin-left: 5px;
+  margin-right: 5px;
 }
 .add-details .add-content .add-option .btn-second {
   background-color: #59bb66 !important;
@@ -1023,14 +1030,14 @@ img {
 }
 .add-details .modal-calculator .modal-header {
   background-color: #2a378d;
-  border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   position: relative;
 }
 .add-details .modal-calculator .modal-header .modal-title {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  right: 50%;
+  transform: translate(50%, 0);
   color: #fff;
   margin: 0;
   font-size: 16px;
@@ -1062,13 +1069,18 @@ img {
   text-decoration: none;
   color: #fff;
 }
-.add-details .modal-calculator .modal-body #accordion .card-header .btn-link::after {
+.add-details
+  .modal-calculator
+  .modal-body
+  #accordion
+  .card-header
+  .btn-link::after {
   content: "";
   position: absolute;
-  left: 2%;
+  right: 2%;
   top: 30%;
-  transform: translate(-2%, -30%);
-  transform: rotate(360deg);
+  transform: translate(2%, -30%);
+  transform: rotate(-360deg);
   transition: all 0.5s;
 }
 .add-details .modal-calculator .modal-body #accordion .card-body {
@@ -1076,8 +1088,13 @@ img {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   border: 0 !important;
 }
-.add-details .modal-calculator .modal-body #accordion .card-header .btn-link[aria-expanded=true]::after {
-  transform: rotate(180deg) !important;
+.add-details
+  .modal-calculator
+  .modal-body
+  #accordion
+  .card-header
+  .btn-link[aria-expanded="true"]::after {
+  transform: rotate(-180deg) !important;
 }
 
 .card-house-place {
@@ -1090,7 +1107,7 @@ img {
 .card-house-place .map-option {
   position: absolute;
   top: 20px;
-  left: 20px;
+  right: 20px;
   z-index: 2;
 }
 .card-house-place .map-option a {
@@ -1098,7 +1115,7 @@ img {
   background-color: #2a378d;
   width: 40px;
   height: 40px;
-  margin-left: 5px;
+  margin-right: 5px;
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -1139,7 +1156,7 @@ img {
   display: inline-block;
 }
 .specifications ul li .a-left {
-  float: left;
+  float: right;
   color: #2a378d;
 }
 
@@ -1192,7 +1209,7 @@ img {
   margin-bottom: 20px;
 }
 .relates-house-add .related-house-add-slider .slider-item .card {
-  direction: rtl;
+  direction: ltr;
 }
 .relates-house-add .related-house-add-slider .slick-dots {
   text-align: center;
@@ -1213,7 +1230,11 @@ img {
 .relates-house-add .related-house-add-slider .slick-dots .slick-active button {
   background-color: #2a378d;
 }
-.relates-house-add .related-house-add-slider .slick-dots .slick-active button::before {
+.relates-house-add
+  .related-house-add-slider
+  .slick-dots
+  .slick-active
+  button::before {
   content: none !important;
 }
 
@@ -1253,7 +1274,7 @@ img {
   background-color: #2a378d;
   width: 40px;
   height: 40px;
-  margin-left: 5px;
+  margin-right: 5px;
   color: #fff;
   border-radius: 50%;
   text-align: center;
@@ -1288,8 +1309,8 @@ img {
 .my-account-tabs .tab-account-options .card-profile {
   border-radius: 0;
   background-color: #2a378d;
-  border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   padding: 40px;
 }
 .my-account-tabs .tab-account-options .card-profile .card-img {
@@ -1331,13 +1352,13 @@ img {
 .my-account-tabs .tab-account-options .nav-link img {
   width: 24px;
   height: 24px;
-  margin-left: 5px;
+  margin-right: 5px;
   margin-top: -3px;
 }
 .my-account-tabs .tab-account-options .nav-link::after {
-  content: "";
+  content: "\f054";
   position: absolute;
-  left: 10px;
+  right: 10px;
   color: #2a378d;
   font-size: 14px;
 }
@@ -1356,75 +1377,171 @@ img {
   padding-bottom: 10px;
   border-bottom: 1px solid #e7e7e7;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content ul li .title {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  ul
+  li
+  .title {
   font-size: 16px;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content ul li .text {
-  float: left;
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  ul
+  li
+  .text {
+  float: right;
   color: #2a378d;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content ul li:last-child {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  ul
+  li:last-child {
   border-bottom: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .btn-edit-data {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .btn-edit-data {
   width: 180px;
   background-color: #2a378d;
   border-radius: 20px;
   color: #fff;
   border: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .btn-edit-data:focus {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .btn-edit-data:focus {
   outline: 0;
   box-shadow: none;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .btn-edit-password {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .btn-edit-password {
   width: 180px;
   background-color: #59bb66;
   border-radius: 20px;
   color: #fff;
   border: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .btn-edit-password:focus {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .btn-edit-password:focus {
   outline: 0;
   box-shadow: none;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .edit-data-modal .modal-header {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .edit-data-modal
+  .modal-header {
   background-color: #2a378d;
   color: #fff;
   position: relative;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .edit-data-modal .modal-header .modal-title {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .edit-data-modal
+  .modal-header
+  .modal-title {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  right: 50%;
+  transform: translate(50%, 0);
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .edit-data-modal .modal-header .close {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .edit-data-modal
+  .modal-header
+  .close {
   color: #fff;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .edit-data-modal .modal-body .input-group {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .edit-data-modal
+  .modal-body
+  .input-group {
   border-radius: 25px;
   padding: 2px;
   box-shadow: 0 0rem 0.2rem rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .edit-data-modal .modal-body .input-group .form-control {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .edit-data-modal
+  .modal-body
+  .input-group
+  .form-control {
   border: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .edit-data-modal .modal-body .input-group .form-control::placeholder {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .edit-data-modal
+  .modal-body
+  .input-group
+  .form-control::placeholder {
   color: #c1c1c1;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .edit-data-modal .modal-body .input-group .input-group-text {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .edit-data-modal
+  .modal-body
+  .input-group
+  .input-group-text {
   border: 0;
   background-color: transparent;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .edit-data-modal .modal-body .input-group .input-group-text i {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .edit-data-modal
+  .modal-body
+  .input-group
+  .input-group-text
+  i {
   color: #c1c1c1;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .edit-data-modal .modal-footer {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .edit-data-modal
+  .modal-footer {
   border-top: 0 !important;
   padding-top: 0 !important;
 }
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .edit-data-modal .modal-footer .btn {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .profile-card-content
+  .edit-data-modal
+  .modal-footer
+  .btn {
   background-color: #2a378d;
   border-radius: 25px;
   border: 0;
@@ -1439,70 +1556,182 @@ img {
   width: 50%;
   text-align: center;
   margin-top: -25px;
-  margin-right: 160px;
+  margin-left: 160px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .add-new-ads .btn-add-new-adds {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .add-new-ads
+  .btn-add-new-adds {
   background-color: #59bb66;
   border-radius: 25px;
   color: #fff;
-  margin-right: 10px;
+  margin-left: 10px;
   border: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .add-new-ads .btn-add-new-adds:focus {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .add-new-ads
+  .btn-add-new-adds:focus {
   box-shadow: none;
   outline: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .add-new-ads .modal .modal-content {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .add-new-ads
+  .modal
+  .modal-content {
   border-radius: 20px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .add-new-ads .modal .modal-header {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .add-new-ads
+  .modal
+  .modal-header {
   background-color: #2a378d;
-  border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   color: #fff;
   position: relative;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .add-new-ads .modal .modal-header .modal-title {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .add-new-ads
+  .modal
+  .modal-header
+  .modal-title {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  right: 50%;
+  transform: translate(50%, 0);
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .add-new-ads .modal .modal-header .close {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .add-new-ads
+  .modal
+  .modal-header
+  .close {
   color: #fff;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .add-new-ads .modal .modal-header .close i {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .add-new-ads
+  .modal
+  .modal-header
+  .close
+  i {
   color: #fff;
   font-size: 15px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .add-new-ads .modal .modal-footer {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .add-new-ads
+  .modal
+  .modal-footer {
   border-top: 0;
   padding-top: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .add-new-ads .modal .modal-footer .btn {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .add-new-ads
+  .modal
+  .modal-footer
+  .btn {
   background-color: #2a378d;
   border-radius: 25px;
   border: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img {
   position: relative;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option {
   position: absolute;
   bottom: 10px;
-  direction: ltr;
+  direction: rtl;
   width: 100%;
   text-align: center;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .btn-trash {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .btn-trash {
   padding: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .btn:focus,
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option a:focus {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .btn:focus,
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  a:focus {
   box-shadow: none;
   outline: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .btn i,
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option a i {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .btn
+  i,
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  a
+  i {
   position: unset;
   margin: 2px;
   width: 35px;
@@ -1513,48 +1742,153 @@ img {
   text-align: center;
   line-height: 35px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal .modal-content {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal
+  .modal-content {
   border-radius: 20px;
-  direction: rtl;
+  direction: ltr;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal .modal-header {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal
+  .modal-header {
   background-color: #2a378d;
-  border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   color: #fff;
   position: relative;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal .modal-header .modal-title {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal
+  .modal-header
+  .modal-title {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  right: 50%;
+  transform: translate(50%, 0);
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal .modal-header .close {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal
+  .modal-header
+  .close {
   color: #fff;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal .modal-header .close i {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal
+  .modal-header
+  .close
+  i {
   color: #fff;
   font-size: 15px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal .modal-footer {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal
+  .modal-footer {
   border-top: 0;
   padding-top: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal .modal-footer .btn {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal
+  .modal-footer
+  .btn {
   background-color: #2a378d;
   border-radius: 25px;
   border: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-delete-add .modal-dialog {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-delete-add
+  .modal-dialog {
   max-width: 444px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-delete-add .modal-content {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-delete-add
+  .modal-content {
   padding: 0px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-delete-add .modal-body {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-delete-add
+  .modal-body {
   text-align: center;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-delete-add .modal-body i {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-delete-add
+  .modal-body
+  i {
   position: unset;
   margin: 2px;
   width: 100px;
@@ -1568,23 +1902,71 @@ img {
   margin-bottom: 10px;
   font-size: 30px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-delete-add .modal-footer .btn {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-delete-add
+  .modal-footer
+  .btn {
   width: 45%;
   margin: auto !important;
   padding: 10px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-delete-add .modal-footer .btn-cancel {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-delete-add
+  .modal-footer
+  .btn-cancel {
   background-color: #59bb66;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-dialog {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-dialog {
   max-width: 444px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-header i {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-header
+  i {
   position: unset;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body {
-  text-align: right;
-  padding-right: 40px;
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body {
+  text-align: left;
+  padding-left: 40px;
   /* Hide the browser's default checkbox */
   /* Create a custom checkbox */
   /* On mouse-over, add a grey background color */
@@ -1593,74 +1975,228 @@ img {
   /* Show the checkmark when checked */
   /* Style the checkmark/indicator */
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body ul li {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body
+  ul
+  li {
   border-bottom: 1px solid #d6d4d4;
   position: relative;
   padding-top: 15px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body ul li .upgrade-title span {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body
+  ul
+  li
+  .upgrade-title
+  span {
   font-weight: bold;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body ul li .upgrade-title p {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body
+  ul
+  li
+  .upgrade-title
+  p {
   color: #c1c1c1;
   font-size: 14px;
   margin: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body ul li:last-child {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body
+  ul
+  li:last-child {
   border-bottom: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body .container input {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body
+  .container
+  input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body .checkmark {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body
+  .checkmark {
   position: absolute;
   top: 20%;
-  left: 100%;
+  right: 100%;
   height: 20px;
   width: 20px;
   background-color: #eee;
   border-radius: 50%;
-  margin-left: -10px;
+  margin-right: -10px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body .container:hover input ~ .checkmark {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body
+  .container:hover
+  input
+  ~ .checkmark {
   background-color: #ccc;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body .container input:checked ~ .checkmark {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body
+  .container
+  input:checked
+  ~ .checkmark {
   background-color: #59bb66;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body .checkmark:after {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body
+  .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body .container input:checked ~ .checkmark:after {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body
+  .container
+  input:checked
+  ~ .checkmark:after {
   display: block;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-body .container .checkmark:after {
-  left: 6px;
-  top: 2px;
-  width: 7px;
-  height: 14px;
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-body
+  .container
+  .checkmark:after {
+  right: 3px;
+  top: 4px;
+  width: 15px;
+  height: 9px;
   border: solid white;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  border-width: 0 0 2px 2px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-footer .btn {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-footer
+  .btn {
   width: 45%;
   margin: auto;
   padding: 10px;
 }
-.my-account-tabs .tab-account-content .tab-content .adds-cards .account-adds-cards .card .card-img .add-card-option .modal-upgrade-add .modal-footer .btn-cancel {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .adds-cards
+  .account-adds-cards
+  .card
+  .card-img
+  .add-card-option
+  .modal-upgrade-add
+  .modal-footer
+  .btn-cancel {
   background-color: #59bb66;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-offers-cards .offers-card,
-.my-account-tabs .tab-account-content .tab-content .tab-offers-cards .houses-cards {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-offers-cards
+  .offers-card,
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-offers-cards
+  .houses-cards {
   margin-top: 0 !important;
 }
 .my-account-tabs .tab-account-content .tab-content .tab-add-price .card {
@@ -1671,7 +2207,12 @@ img {
   border: 0;
   border-radius: 20px;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-add-price .card .card-title {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-add-price
+  .card
+  .card-title {
   width: 95px;
   height: 95px;
   text-align: center;
@@ -1683,11 +2224,21 @@ img {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   font-size: 25px;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-add-price .card .card-text {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-add-price
+  .card
+  .card-text {
   font-weight: bold;
   margin-top: 10px;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-add-price .card .payment {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-add-price
+  .card
+  .payment {
   background-color: #2a378d;
   color: #fff;
   width: 130px;
@@ -1702,10 +2253,20 @@ img {
   text-align: center;
   margin-bottom: 15px;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .image-upload > input {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .image-upload
+  > input {
   display: none;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .image-upload .file-upload {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .image-upload
+  .file-upload {
   border: 2px dashed rgba(42, 55, 141, 0.8);
   cursor: pointer;
   width: 100%;
@@ -1717,74 +2278,152 @@ img {
   position: relative;
   transition: all 1s ease;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .image-upload .file-upload:hover {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .image-upload
+  .file-upload:hover {
   border: 2px solid #2a378d;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .image-upload .file-upload img {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .image-upload
+  .file-upload
+  img {
   width: 30px;
   height: 30px;
   color: #2a378d;
   font-size: 35px;
   position: relative;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .image-upload .file-upload h6 {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .image-upload
+  .file-upload
+  h6 {
   margin: 0;
   position: absolute;
   bottom: 15px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  right: 50%;
+  transform: translate(50%, 0);
   font-size: 14px;
   color: #2a378d;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .image-upload .file-upload #file-name {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .image-upload
+  .file-upload
+  #file-name {
   position: absolute;
   bottom: -50px;
-  margin-right: 33px;
+  margin-left: 33px;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .text-form-control-area {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .text-form-control-area {
   height: 96px !important;
 }
 .my-account-tabs .tab-account-content .tab-content .tab-building .form-group {
   margin: 0;
   margin-bottom: 15px;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .form-group .form-control {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .form-group
+  .form-control {
   border-radius: 20px;
   height: calc(1.5em + 0.75rem + 10px);
   border: 1px solid #fff;
   box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.15);
   color: #c9c7c7;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .form-group .form-control::placeholder {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .form-group
+  .form-control::placeholder {
   color: #c9c7c7;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .form-group .form-control:focus {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .form-group
+  .form-control:focus {
   border: 1px solid #2a378d;
   color: #2a378d;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .form-group .form-control:focus::placeholder {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .form-group
+  .form-control:focus::placeholder {
   color: #2a378d;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .send-order-btn .btn {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .send-order-btn
+  .btn {
   background-color: #2a378d;
   color: #fff;
   border-radius: 25px;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .send-order-btn .btn:focus {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .send-order-btn
+  .btn:focus {
   outline: 0;
   box-shadow: none;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .send-order-modal .modal-dialog {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .send-order-modal
+  .modal-dialog {
   max-width: 350px;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .send-order-modal .modal-content {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .send-order-modal
+  .modal-content {
   border: 0;
   border-radius: 25px;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .send-order-modal .modal-body {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .send-order-modal
+  .modal-body {
   text-align: center;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .send-order-modal .modal-body i {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .send-order-modal
+  .modal-body
+  i {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -1796,7 +2435,13 @@ img {
   margin-bottom: 10px;
   font-size: 30px;
 }
-.my-account-tabs .tab-account-content .tab-content .tab-building .send-order-modal .modal-body p {
+.my-account-tabs
+  .tab-account-content
+  .tab-content
+  .tab-building
+  .send-order-modal
+  .modal-body
+  p {
   font-size: 18px;
 }
 
@@ -1857,7 +2502,7 @@ img {
 }
 .ads-add .ads-add-form .choses ul li {
   position: relative;
-  float: right;
+  float: left;
   width: 25%;
   margin-bottom: 14px;
   /* Hide the browser's default checkbox */
@@ -1878,12 +2523,12 @@ img {
 .ads-add .ads-add-form .choses ul li .checkmark {
   position: absolute;
   top: 0%;
-  left: 100%;
+  right: 100%;
   height: 20px;
   width: 20px;
   background-color: #eee;
   border-radius: 50%;
-  margin-left: -10px;
+  margin-right: -10px;
 }
 .ads-add .ads-add-form .choses ul li .container:hover input ~ .checkmark {
   background-color: #ccc;
@@ -1896,19 +2541,26 @@ img {
   position: absolute;
   display: none;
 }
-.ads-add .ads-add-form .choses ul li .container input:checked ~ .checkmark:after {
+.ads-add
+  .ads-add-form
+  .choses
+  ul
+  li
+  .container
+  input:checked
+  ~ .checkmark:after {
   display: block;
 }
 .ads-add .ads-add-form .choses ul li .container .checkmark:after {
-  left: 6px;
-  top: 2px;
-  width: 7px;
-  height: 14px;
+  right: 3px;
+  top: 5px;
+  width: 15px;
+  height: 7px;
   border: solid white;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  border-width: 0 0 2px 2px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .ads-add .ads-add-form .add-ads-btn .btn {
   border-radius: 25px;
@@ -1984,15 +2636,15 @@ img {
   margin: 0;
   position: absolute;
   bottom: 15px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  right: 50%;
+  transform: translate(50%, 0);
   font-size: 14px;
   color: #2a378d;
 }
 .ads-add .image-upload .file-upload #file-name {
   position: absolute;
   bottom: -50px;
-  margin-right: 33px;
+  margin-left: 33px;
 }
 
 .transfer-confirm {
@@ -2004,8 +2656,8 @@ img {
 }
 .transfer-confirm .transfer-confirm-card .card .card-header {
   background-color: #2a378d;
-  border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
   text-align: center;
   color: #fff;
 }
@@ -2051,14 +2703,14 @@ img {
 .transfer-confirm .transfer-confirm-card .card .card-body .card-body-img {
   margin: 21px;
   position: relative;
-  padding-right: 70px;
+  padding-left: 70px;
 }
 .transfer-confirm .transfer-confirm-card .card .card-body .card-body-img img {
   max-width: 85px;
   height: 85px;
   border-radius: 11px;
   position: absolute;
-  right: -22px;
+  left: -22px;
 }
 .transfer-confirm .transfer-confirm-card .card .card-body .card-body-img h5,
 .transfer-confirm .transfer-confirm-card .card .card-body .card-body-img p {
@@ -2075,7 +2727,10 @@ img {
   width: 70%;
   margin: auto;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-content-header h5 {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-content-header
+  h5 {
   font-size: 25px;
   font-weight: bold;
 }
@@ -2091,38 +2746,69 @@ img {
   margin: 0;
   margin-bottom: 15px;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .form-group .form-control {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .form-group
+  .form-control {
   border-radius: 20px;
   height: calc(1.5em + 0.75rem + 10px);
   border: 1px solid #fff;
   box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.15);
   color: #c9c7c7;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .form-group .form-control::placeholder {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .form-group
+  .form-control::placeholder {
   color: #c9c7c7;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .form-group .form-control:focus {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .form-group
+  .form-control:focus {
   border: 1px solid #2a378d;
   color: #2a378d;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .form-group .form-control:focus::placeholder {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .form-group
+  .form-control:focus::placeholder {
   color: #2a378d;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .btn-submit-confirm .btn {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .btn-submit-confirm
+  .btn {
   background-color: #2a378d;
   border-radius: 25px;
   color: #fff;
   padding: 10px;
   margin-top: 25px;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .image-upload {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .image-upload {
   text-align: center;
   margin-bottom: 15px;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .image-upload > input {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .image-upload
+  > input {
   display: none;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .image-upload .file-upload {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .image-upload
+  .file-upload {
   border: 2px dashed rgba(42, 55, 141, 0.8);
   cursor: pointer;
   width: 100%;
@@ -2134,29 +2820,48 @@ img {
   position: relative;
   transition: all 1s ease;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .image-upload .file-upload:hover {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .image-upload
+  .file-upload:hover {
   border: 2px solid #2a378d;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .image-upload .file-upload img {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .image-upload
+  .file-upload
+  img {
   width: 30px;
   height: 30px;
   color: #2a378d;
   font-size: 35px;
   position: relative;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .image-upload .file-upload h6 {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .image-upload
+  .file-upload
+  h6 {
   margin: 0;
   position: absolute;
   bottom: 15px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  right: 50%;
+  transform: translate(50%, 0);
   font-size: 14px;
   color: #2a378d;
 }
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form .image-upload .file-upload #file-name {
+.transfer-confirm
+  .transfer-confirm-content
+  .transfer-confirm-form
+  .image-upload
+  .file-upload
+  #file-name {
   position: absolute;
   bottom: -50px;
-  margin-right: 33px;
+  margin-left: 33px;
 }
 
 .messages {
@@ -2170,8 +2875,8 @@ img {
 }
 .messages .message-card .card .card-header {
   background-color: #2a378d;
-  border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
   text-align: center;
   color: #fff;
 }
@@ -2181,7 +2886,7 @@ img {
 .messages .message-card .card .card-body ul li {
   position: relative;
   padding: 30px;
-  padding-right: 70px;
+  padding-left: 70px;
   border-bottom: 1px solid #e9e7e7;
   padding-bottom: 20px;
   padding-top: 15px;
@@ -2199,7 +2904,7 @@ img {
   line-height: 40px;
   text-align: center;
   color: #fff;
-  right: 20px;
+  left: 20px;
 }
 .messages .message-card .card .card-body ul li span h6,
 .messages .message-card .card .card-body ul li span p,
@@ -2252,14 +2957,14 @@ img {
   font-size: 16px;
   padding: 12px;
   margin: 0;
-  padding-right: 0;
+  padding-left: 0;
 }
 .messages .message-content .card .card-body {
   padding: 0;
   color: #fff;
   padding: 18px;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .messages .message-content .card .card-body .card-text {
   margin: 0;
@@ -2270,13 +2975,13 @@ img {
   margin-top: 14px;
 }
 .messages .message-content .send {
-  margin-left: auto;
+  margin-right: auto;
 }
 .messages .message-content .send .card-body {
   background-color: #59bb66;
 }
 .messages .message-content .reseive {
-  margin-right: auto;
+  margin-left: auto;
 }
 .messages .message-content .reseive .card-body {
   background-color: #2a378d;
@@ -2284,14 +2989,14 @@ img {
 .messages .message-form {
   height: 60px;
   background-color: #f9f9f9;
-  border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .messages .message-form .input-group {
-  border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding-right: 10px;
+  border-bottom-left-radius: 20px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 .messages .message-form .input-group .input-group-prepend,
 .messages .message-form .input-group .form-control {
@@ -2333,7 +3038,7 @@ footer .more-important h5 {
 }
 footer .important-link h5::after,
 footer .more-important h5::after {
-  right: 0 !important;
+  left: 0 !important;
   transform: translate(0, 0) !important;
 }
 footer .important-link ul,
@@ -2342,7 +3047,7 @@ footer .more-important ul {
 }
 footer .important-link ul li,
 footer .more-important ul li {
-  float: right;
+  float: left;
   width: 50%;
   position: relative;
   margin-bottom: 7px;
@@ -2361,9 +3066,9 @@ footer .more-important ul li::before {
   position: absolute;
   color: #77838f;
   font-size: 12px;
-  right: 0;
+  left: 0;
   margin-top: 2px;
-  margin-right: -13px;
+  margin-left: -13px;
 }
 footer .important-link ul li:hover a,
 footer .more-important ul li:hover a {
@@ -2390,12 +3095,12 @@ footer .more-important .form-control::placeholder {
 footer .more-important .btn {
   background-color: #2a378d;
   border: 0;
-  margin-right: 5px;
+  margin-left: 5px;
   border-radius: 25px;
   color: #fff;
-  border-right: 0;
-  border-top-right-radius: 25px !important;
-  border-bottom-right-radius: 25px !important;
+  border-left: 0;
+  border-top-left-radius: 25px !important;
+  border-bottom-left-radius: 25px !important;
 }
 footer .more-important .social {
   margin-top: 20px;
@@ -2426,16 +3131,16 @@ footer .more-important .social i:hover {
   font-size: 15px;
   color: #000;
   margin-top: 20px;
-  float: right;
+  float: left;
 }
 .copy .logo-funun {
   width: 50%;
-  float: left;
-  text-align: left;
+  float: right;
+  text-align: right;
   margin-top: 10px;
 }
 .copy .logo-funun img {
-  margin-right: 5px;
+  margin-left: 5px;
   width: 72px;
   height: 25px;
 }
@@ -2449,7 +3154,7 @@ footer .more-important .social i:hover {
     width: 100% !important;
     transform: rotate(0);
     bottom: 30px;
-    right: 0;
+    left: 0;
   }
 
   footer .footer-logo-content {
@@ -2466,7 +3171,7 @@ footer .more-important .social i:hover {
 
   .copy .logo-funun {
     width: 100%;
-    text-align: right;
+    text-align: left;
   }
 
   footer .more-important h5 {
@@ -2475,9 +3180,9 @@ footer .more-important .social i:hover {
   }
 
   footer .important-link ul,
-footer .more-important ul {
+  footer .more-important ul {
     margin-top: 0;
-    margin-right: 10px;
+    margin-left: 10px;
   }
 
   footer .footer-logo-content .logo p {
@@ -2516,8 +3221,8 @@ footer .more-important ul {
   }
 
   .add-details .add-content .add-option .btn-calc,
-.add-details .add-content .add-option .btn-add-fav,
-.add-details .add-content .add-option .btn-share {
+  .add-details .add-content .add-option .btn-add-fav,
+  .add-details .add-content .add-option .btn-share {
     margin-bottom: 10px;
   }
 
@@ -2526,8 +3231,8 @@ footer .more-important ul {
   }
 
   .description .card {
-    padding-right: 8px;
     padding-left: 8px;
+    padding-right: 8px;
   }
 
   .adds-person .all-person-adds-header {
@@ -2562,7 +3267,7 @@ footer .more-important ul {
   }
 
   .transfer-confirm .transfer-confirm-content .transfer-confirm-content-header,
-.transfer-confirm .transfer-confirm-content .transfer-confirm-form {
+  .transfer-confirm .transfer-confirm-content .transfer-confirm-form {
     width: 100%;
   }
 
@@ -2575,12 +3280,12 @@ footer .more-important ul {
     border-radius: 10px;
   }
   .navbar .navbar-nav .active .nav-link .btn {
-    color: #2a378d;
+    color: #2a378d !important;
   }
 }
 @media (max-width: 524px) {
   .houses-cards .dropdoen-div {
-    text-align: right;
+    text-align: left;
     margin-top: 30px;
   }
 
@@ -2593,7 +3298,7 @@ footer .more-important ul {
   }
 
   .ads-add .ads-add-form .choses ul {
-    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .ads-add .ads-add-form .choses ul li {
@@ -2608,15 +3313,23 @@ footer .more-important ul {
     width: 80%;
   }
 
-  .my-account-tabs .tab-account-content .tab-content .profile-card-content .btn-edit-data,
-.my-account-tabs .tab-account-content .tab-content .profile-card-content .btn-edit-password {
+  .my-account-tabs
+    .tab-account-content
+    .tab-content
+    .profile-card-content
+    .btn-edit-data,
+  .my-account-tabs
+    .tab-account-content
+    .tab-content
+    .profile-card-content
+    .btn-edit-password {
     width: 100%;
     margin-bottom: 5px;
   }
 
   .my-account-tabs .tab-account-content .tab-content .adds-cards .add-new-ads {
     width: 100%;
-    margin-right: 0;
+    margin-left: 0;
   }
 
   .tab-account-content .houses-cards {
@@ -2627,19 +3340,29 @@ footer .more-important ul {
     width: 100%;
   }
 }
-.departments .section-header::after, .houses-cards .houses-card-header::after, .relates-house-add .related-header::after, footer .important-link h5::after,
+.departments .section-header::after,
+.houses-cards .houses-card-header::after,
+.relates-house-add .related-header::after,
+footer .important-link h5::after,
 footer .more-important h5::after {
   content: "";
   position: absolute;
-  left: 50%;
+  right: 50%;
   bottom: 0;
-  transform: translate(-50%, 0);
+  transform: translate(50%, 0);
   width: 28px;
   height: 3px;
   background-color: #2a378d;
 }
 
-.path a::after, .add-details .modal-calculator .modal-body #accordion .card-header .btn-link::after, .my-account-tabs .tab-account-options .nav-link::after {
+.path a::after,
+.add-details
+  .modal-calculator
+  .modal-body
+  #accordion
+  .card-header
+  .btn-link::after,
+.my-account-tabs .tab-account-options .nav-link::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
@@ -2647,5 +3370,3 @@ footer .more-important h5::after {
 a {
   cursor: pointer;
 }
-
-/*# sourceMappingURL=style.css.map */

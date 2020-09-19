@@ -14,7 +14,6 @@
 
 <body>
 
-
   <!-- start top header -->
   <div class="top-header">
     <div class="container">
@@ -22,14 +21,39 @@
         <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="top-header-login">
             <ul class="list-unstyled">
-              <li>
-                <a href="">
-                  <i class="far fa-user"></i>
-                  <span>تسجيل الدخول</span>
-                </a>
+              <li class="my-account">
+                <span class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-user"></i>
+                    حسابي
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                      <i class="far fa-user"></i>
+                      <span>حسابي</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="far fa-heart"></i>
+                      <span>المفضلة</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="far fa-comment"></i>
+                      <span>الرسائل</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-unlock"></i>
+                      <span>تسجيل الخروج</span>
+                    </a>
+                  </div>
+                </span>
               </li>
-              <li>
-                <a href="">حساب جديد</a>
+              <li class="notification-bell">
+                <a href="">
+                  <i class="fas fa-bell"></i>
+                  <span>الاشعارات</span>
+                  <span class="notification-number">12</span>
+                </a>
               </li>
               <div class="clear"></div>
             </ul>
@@ -529,238 +553,18 @@
   <!-- end navbar -->
 
 
-  <!-- start header -->
-  <div class="header">
-    <div class="header-slider" dir="ltr">
-      <div class="slider-item" style="background-image: url('./assets/images/header.png');">
-
-        <div class="container">
-          <div class="header-content">
-            <h5>أفضل موقع عقارات</h5>
-            <p>
-              العديد والعديد من العقارات المتنوعة في كل المناطق
-              على مستوى المملكة العربية السعودية فقط
-              تصفح عقارك الأن
-            </p>
-            <a href="#" class="btn">اكتشف المزيد</a>
-          </div>
-        </div>
-      </div>
-      <div class="slider-item" style="background-image: url('./assets/images/header.png');">
-
-        <div class="container">
-          <div class="header-content">
-            <h5>أفضل موقع عقارات</h5>
-            <p>
-              العديد والعديد من العقارات المتنوعة في كل المناطق
-              على مستوى المملكة العربية السعودية فقط
-              تصفح عقارك الأن
-            </p>
-            <a href="" class="btn">إكتشف المزيد</a>
-          </div>
-        </div>
-      </div>
-      <div class="slider-item" style="background-image: url('./assets/images/header.png');">
-
-        <div class="container">
-          <div class="header-content">
-            <h5>أفضل موقع عقارات</h5>
-            <p>
-              العديد والعديد من العقارات المتنوعة في كل المناطق
-              على مستوى المملكة العربية السعودية فقط
-              تصفح عقارك الأن
-            </p>
-            <a href="" class="btn">إكتشف المزيد</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- start areas -->
+  <div class="areas-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d907337.8136757141!2d31.594399800000005!3d27.3354528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1600160500193!5m2!1sen!2seg"
+      class="area-map-iframe" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
   </div>
-  <!-- end header -->
-
-
-  <!-- start search -->
-
-  <div class="search-input">
-    <div class="container">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text">
-            <i class="fas fa-search"></i>
-          </span>
-        </div>
-        <input type="text" class="form-control" aria-label="search" placeholder="ابحث في الميسر العقاري">
-        <div class="input-group-append">
-          <button class="input-group-text btn">بحث</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- end search -->
-
-  <!-- start departments -->
-  <div class="departments">
-    <div class="container">
-      <div class="section-header">
-        <h5>قائمة الأقسام</h5>
-        <p>تصفح الميسر العقاري عن طريق الأقسام</p>
-      </div>
-      <div class="departments-cards">
-        <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/floor.png" alt="">
-              </div>
-              <h5 class="card-title">أراضي</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house.png" alt="">
-              </div>
-              <h5 class="card-title">شقق</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house (1).png" alt="">
-              </div>
-              <h5 class="card-title">فلل</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/floor.png" alt="">
-              </div>
-              <h5 class="card-title">أراضي</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house.png" alt="">
-              </div>
-              <h5 class="card-title">شقق</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house (1).png" alt="">
-              </div>
-              <h5 class="card-title">فلل</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/floor.png" alt="">
-              </div>
-              <h5 class="card-title">أراضي</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house.png" alt="">
-              </div>
-              <h5 class="card-title">شقق</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house (1).png" alt="">
-              </div>
-              <h5 class="card-title">فلل</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/floor.png" alt="">
-              </div>
-              <h5 class="card-title">أراضي</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house.png" alt="">
-              </div>
-              <h5 class="card-title">شقق</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house (1).png" alt="">
-              </div>
-              <h5 class="card-title">فلل</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/floor.png" alt="">
-              </div>
-              <h5 class="card-title">أراضي</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house.png" alt="">
-              </div>
-              <h5 class="card-title">شقق</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house (1).png" alt="">
-              </div>
-              <h5 class="card-title">فلل</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/floor.png" alt="">
-              </div>
-              <h5 class="card-title">أراضي</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house.png" alt="">
-              </div>
-              <h5 class="card-title">شقق</h5>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-2">
-            <a href="" class="card">
-              <div class="card-img">
-                <img src="./assets/images/house (1).png" alt="">
-              </div>
-              <h5 class="card-title">فلل</h5>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end departments -->
+  <!-- end areas -->
 
 
   <!-- sart add-your-ads -->
-  <div class="add-your-ads"
+  <div class="add-your-ads adds-your-add-area-map-page"
     style="background-image: linear-gradient(to left, rgba(36, 47, 121, 0.1), rgba(43, 56, 143, 0.8), rgba(43, 56, 143, 1)), url('./assets/images/add-your-ads.png');">
     <div class="container">
       <div class="content">
@@ -840,6 +644,7 @@
       <div class="clear"></div>
     </div>
   </div>
+
 
   <script src="./assets/js/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
